@@ -9,7 +9,7 @@ export default function Main() {
         {
             Url.map((data,idx)=>{
                 return(
-                    <Reel key={idx}  name={data.name} lnk={data.link} />
+                    <Reel key={idx}  head={data.name} lnk={data.link} />
                 )
             })
         }
