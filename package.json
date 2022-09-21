@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "movie-trailer": "^2.1.0",
+    "react-youtube": "^10.0.0"
+  }
+}
