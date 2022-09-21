@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Trending",
+    "link": "trending/all/week?api_key=a0c53ec1c9833234df4cf45863ddc057&language=en-US"
+  },
+  {
+    "name": "Netflix Originals",
+    "link": "discover/tv?api_key=a0c53ec1c9833234df4cf45863ddc057&with_networks=213"
+  },
+  {
+    "name": "Top Rated",
+    "link": "movie/top_rated?api_key=a0c53ec1c9833234df4cf45863ddc057&language=en-US"
+  },
+  {
+    "name": "Action Movies",
+    "link": "discover/movie?api_key=a0c53ec1c9833234df4cf45863ddc057&with_genres=28"
+  },
+  {
+    "name": "Comedy Movies",
+    "link": "discover/movie?api_key=a0c53ec1c9833234df4cf45863ddc057&with_genres=35"
+  },
+  {
+    "name": "Horror Movies",
+    "link": "discover/movie?api_key=a0c53ec1c9833234df4cf45863ddc057&with_genres=27"
+  },
+  {
+    "name": "Romance Movies",
+    "link": "discover/movie?api_key=a0c53ec1c9833234df4cf45863ddc057&with_genres=10749"
+  },
+  {
+    "name": "Documantaries",
+    "link": "discover/movie?api_key=a0c53ec1c9833234df4cf45863ddc057&with_genres=99"
+  }
+]
