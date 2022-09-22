@@ -6,13 +6,9 @@ export default function Main() {
   return (
     <>
       <main>
-        {
-            Url.map((data,idx)=>{
-                return(
-                    <Reel key={idx}  head={data.name} lnk={data.link} />
-                )
-            })
-        }
+        {Url.map((data, idx) => {
+          return <Reel key={idx} head={data.name} lnk={data.link} />;
+        })}
       </main>
     </>
   );

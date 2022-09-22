@@ -1,93 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
-:root{
+:root {
   --Anim: 2;
 }
-body{
+body {
   background-color: black;
-  color:white;
-  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
   margin: 0 auto;
   min-height: 100vh;
   max-width: 1800px;
 }
-.movie-list{
+.movie-list {
   display: flex;
   align-items: center;
-  gap:2.2rem;
-  overflow-x:scroll;
+  gap: 2.2rem;
+  overflow-x: scroll;
   height: 200px;
-  overflow-y:hidden;
+  overflow-y: hidden;
   flex-basis: 300px;
 }
 
-.movie-list::-webkit-scrollbar{
+.movie-list::-webkit-scrollbar {
   appearance: none;
   height: 0;
 }
-.movie-list::-webkit-scrollbar-track{
+.movie-list::-webkit-scrollbar-track {
   height: 0;
 }
-section{
+section {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap:1rem;
+  gap: 1rem;
 }
-.trailer-video{
+.trailer-video {
   position: absolute;
   width: 100%;
   bottom: -0.3rem;
 }
 
-
-.clbtn{
- 
+.clbtn {
   position: absolute;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
   text-align: center;
   display: flex;
   right: 0;
   justify-content: center;
   align-items: center;
 }
-.clbtn p{
+.clbtn p {
   cursor: pointer;
   width: max-content;
   padding: 0.3rem 1.5rem;
   border: 2px solid white;
 }
-.trailerX{
+.trailerX {
   display: none;
 }
-.trailerCome{
+.trailerCome {
   display: block;
 }
-.movie-only{
+.movie-only {
   position: relative;
 }
-.movie-only img{
+.movie-only img {
   width: 200px;
 }
-.movie-only:hover{
-  --Anim : 10px;
+.movie-only:hover {
+  --Anim: 10px;
   cursor: pointer;
   transform: scale(0.95);
   transition: transform 0.4s 0.2s;
 }
 
-main{
+main {
   padding: 3rem 0.5rem;
   display: flex;
   flex-direction: column;
-  gap:5.5rem;
+  gap: 5.5rem;
 }
-header{
+header {
   position: relative;
   height: 580px;
   overflow: hidden;
@@ -98,7 +96,7 @@ header{
   flex-direction: column;
   gap: 9rem;
 }
-.movie-only p{
+.movie-only p {
   position: absolute;
   bottom: var(--Anim);
   transition: bottom 0.5s;
@@ -107,210 +105,206 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size:1rem;
+  font-size: 1rem;
   text-align: center;
- 
 }
-nav{
+nav {
   z-index: 10;
   box-sizing: border-box;
-  width:100% ;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0.5rem;
 }
-a{
+a {
   text-decoration: none;
-  color:white;
+  color: white;
   font-weight: 500;
 }
-ul{
+ul {
   list-style: none;
   display: flex;
-  gap:2rem;
+  gap: 2rem;
   align-items: center;
 }
 
-button{
+button {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border: none;
-  color:white;
+  color: white;
   background-color: transparent;
   cursor: pointer;
 }
-nav ul li:first-of-type button{
+nav ul li:first-of-type button {
   padding: 0;
 }
-ul li:nth-last-of-type(1) button{
+ul li:nth-last-of-type(1) button {
   background-color: red;
   border-radius: 0.2rem;
 }
-.detail{
+.detail {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  padding:1rem;
+  padding: 1rem;
   padding-left: 2rem;
-  gap:1rem;
-  flex:2;
+  gap: 1rem;
+  flex: 2;
 }
-header:after{
+header:after {
   content: "";
-  width:100%;
-  top:0;
+  width: 100%;
+  top: 0;
   bottom: 0;
-  background: linear-gradient(to right,black,transparent 90%);
+  background: linear-gradient(to right, black, transparent 90%);
   position: absolute;
 }
-.bgNavSign{
-  background-image:url("https://assets.nflxext.com/ffe/siteui/vlv3/5fd505fa-f425-4a18-b3cc-00dd2638f541/d638b1fe-b44f-4cb3-b5d8-2106904c3be0/IN-en-20220704-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+.bgNavSign {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/5fd505fa-f425-4a18-b3cc-00dd2638f541/d638b1fe-b44f-4cb3-b5d8-2106904c3be0/IN-en-20220704-popsignuptwoweeks-perspective_alpha_website_large.jpg");
   background-size: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.detail p{
-  color:white;
-  max-width: min(42rem , 70vw);
+.detail p {
+  color: white;
+  max-width: min(42rem, 70vw);
   font-size: 1.3rem;
 }
-.detail p:first-of-type{
-  color:rgb(197, 197, 197);
+.detail p:first-of-type {
+  color: rgb(197, 197, 197);
   font-size: 1rem;
 }
-.detail h1{
+.detail h1 {
   font-size: 3rem;
 }
-.detail ul{
-  gap:2rem;
+.detail ul {
+  gap: 2rem;
 }
-.detail ul li button{
+.detail ul li button {
   background-color: white;
   font-weight: bold;
-  color:black;
+  color: black;
   width: 100%;
 }
-.detail ul li:nth-of-type(2) button{
+.detail ul li:nth-of-type(2) button {
   background-color: transparent;
-  color:white;
-  border:1px solid white;
-
+  color: white;
+  border: 1px solid white;
 }
-.bgNavSign nav{
+.bgNavSign nav {
   position: absolute;
   z-index: 10;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 }
-.sign{
+.sign {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.106);
-  
-  flex:2;
+
+  flex: 2;
 }
-.sign-box{
+.sign-box {
   background-color: rgba(0, 0, 0, 0.651);
   display: flex;
   flex-direction: column;
   padding: 1rem;
   width: 20rem;
-  gap:2rem;
+  gap: 2rem;
   padding: 4vw;
 }
-.sign-box h2{
+.sign-box h2 {
   font-size: 3rem;
   font-weight: 900;
 }
-form{
+form {
   display: flex;
   flex-direction: column;
-  gap:1.3rem;
+  gap: 1.3rem;
 }
-form input{
+form input {
   height: 2rem;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
   border: none;
-  
 }
-nav img{
+nav img {
   max-width: 12rem;
 }
 
-.checkHelp{
+.checkHelp {
   display: flex;
   justify-content: space-between;
-  gap:0.3rem;
+  gap: 0.3rem;
   align-items: center;
 }
-.checkHelp div{
+.checkHelp div {
   display: flex;
-  align-items: center ;
-  gap:0.7rem;
+  align-items: center;
+  gap: 0.7rem;
 }
-form input:focus{
+form input:focus {
   outline: none;
 }
-form button{
+form button {
   border-radius: 0.2rem;
   margin-top: 1rem;
   background-color: red;
-
 }
-.txtSimple{
-  color:gray;
+.txtSimple {
+  color: gray;
 }
-form ~ p span:last-child{
+form ~ p span:last-child {
   position: relative;
   letter-spacing: normal;
   margin-left: 1rem;
-  --chngeSpc : 0.15rem;
+  --chngeSpc: 0.15rem;
 }
-form ~ p span:last-child::after{
+form ~ p span:last-child::after {
   position: absolute;
   content: "";
   background-color: white;
   left: 3px;
   right: 0;
-  
-  height:1px;
+
+  height: 1px;
   bottom: -4px;
 }
-form ~ p span:last-child:active{
+form ~ p span:last-child:active {
   letter-spacing: var(--chngeSpc);
   transition: letter-spacing 0.5s;
 }
-a{
+a {
   width: max-content;
 }
-@media only screen  and (width<=430px){
-  .bgNavSign{
+@media only screen and (width<=430px) {
+  .bgNavSign {
     display: grid;
     place-items: stretch;
   }
-  nav{
+  nav {
     min-width: 290px;
     width: 100%;
   }
-  .sign{
+  .sign {
     background-color: rgba(0, 0, 0, 0.857);
   }
- .sign-box{
-  width: 290px;
- }
+  .sign-box {
+    width: 290px;
+  }
   nav img {
-    max-width: max(7rem , 50%);
+    max-width: max(7rem, 50%);
   }
-  nav ul li:last-of-type button{
-    padding:0.55rem 1.1rem;
+  nav ul li:last-of-type button {
+    padding: 0.55rem 1.1rem;
   }
-  nav ul{
-    gap:1rem;
+  nav ul {
+    gap: 1rem;
   }
-  nav a{
+  nav a {
     max-width: min-content;
   }
 }

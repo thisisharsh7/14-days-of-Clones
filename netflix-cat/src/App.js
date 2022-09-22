@@ -22,9 +22,13 @@ export default function App() {
           path="/sign-in"
           element={
             <>
-            <div className="bgNavSign">
-              <Nav />
-              <Sign sign="Sign In" signPara="Already subscribed to Netflix?" Oppsign="Sign Up" />
+              <div className="bgNavSign">
+                <Nav />
+                <Sign
+                  sign="Sign In"
+                  signPara="Already subscribed to Netflix?"
+                  Oppsign="Sign Up"
+                />
               </div>
             </>
           }
@@ -33,9 +37,13 @@ export default function App() {
           path="/sign-up"
           element={
             <>
-            <div className="bgNavSign">
-              <Nav  />
-              <Sign sign="Sign Up" signPara="New to Netflix?" Oppsign="Sign In" />
+              <div className="bgNavSign">
+                <Nav />
+                <Sign
+                  sign="Sign Up"
+                  signPara="New to Netflix?"
+                  Oppsign="Sign In"
+                />
               </div>
             </>
           }
