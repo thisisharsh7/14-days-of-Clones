@@ -37,7 +37,7 @@ export default function Reel({ head, lnk }) {
           );
         })
         .catch((error) => {
-          alert("Trailer Not Found",cookies);
+          alert("Trailer Not Found", cookies);
         });
     }
   }
