@@ -2,7 +2,6 @@ import React from "react";
 import Url from "./Url.json";
 import Reel from "./Reel";
 
-
 export default function Main() {
   return (
     <>

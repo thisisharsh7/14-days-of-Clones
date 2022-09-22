@@ -307,8 +307,17 @@ a {
   nav a {
     max-width: min-content;
   }
-  .clbtn{
+  .clbtn {
     left: 70%;
     right: 0;
+  }
+  .movie-only {
+    max-height: 180px;
+  }
+  .movie-list {
+    max-height: 180px;
+  }
+  main {
+    gap: 3.5rem;
   }
 }

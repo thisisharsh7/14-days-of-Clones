@@ -9,7 +9,6 @@ export default function Reel({ head, lnk }) {
   const [showTrailer, getTrailer] = useState("");
   const [cookies, setCookie] = useCookies(["user"]);
 
-
   const fetchLink = `https://api.themoviedb.org/3/${lnk}`;
 
   useEffect(() => {
@@ -26,7 +25,7 @@ export default function Reel({ head, lnk }) {
     } else {
       movieTrailer(smovie?.name || smovie?.title || "")
         .then((url) => {
-          setCookie("user", url ,{ path: '/' });
+          setCookie("user", url, { path: "/" });
           const urlParameters = new URLSearchParams(new URL(url).search);
           getTrailer(urlParameters?.get("v"));
           setTimeout(
@@ -37,7 +36,9 @@ export default function Reel({ head, lnk }) {
             2000
           );
         })
-        .catch((error)=>{alert("Trailer Not Found")});
+        .catch((error) => {
+          alert("Trailer Not Found");
+        });
     }
   }
   function clearTrailer(e) {
@@ -47,7 +48,7 @@ export default function Reel({ head, lnk }) {
     }
   }
   const opts = {
-    height: "300",
+    height: "180",
     width: "100%",
     playerVars: {
       autoplay: 1,
