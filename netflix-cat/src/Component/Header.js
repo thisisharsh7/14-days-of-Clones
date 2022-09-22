@@ -34,7 +34,7 @@ export default function Header(){
                 </ul>
                 <div>
                 <p>{headMovie?.first_air_date}</p>
-                <p>{(headMovie?.overview?.length > 100) ? (`${headMovie.overview.slice(0,100)} . . . .`) : (headMovie.overview)}</p>
+                <p>{(headMovie?.overview?.length > 100) ? (`${headMovie.overview.slice(0,100)} . . . .`) : (headMovie?.overview)}</p>
                 </div>
             </div>
             </header>

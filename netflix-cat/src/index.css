@@ -32,7 +32,42 @@ body{
 .movie-list::-webkit-scrollbar-track{
   height: 0;
 }
+section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+.trailer-video{
+  position: absolute;
+  width: 100%;
+  bottom: -0.3rem;
+}
 
+
+.clbtn{
+ 
+  position: absolute;
+  left:0;
+  top:0;
+  text-align: center;
+  display: flex;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+.clbtn p{
+  cursor: pointer;
+  width: max-content;
+  padding: 0.3rem 1.5rem;
+  border: 2px solid white;
+}
+.trailerX{
+  display: none;
+}
+.trailerCome{
+  display: block;
+}
 .movie-only{
   position: relative;
 }
@@ -45,11 +80,7 @@ body{
   transform: scale(0.95);
   transition: transform 0.4s 0.2s;
 }
-section{
-  display: flex;
-  flex-direction: column;
-  gap:1.5rem;
-}
+
 main{
   padding: 3rem 0.5rem;
   display: flex;

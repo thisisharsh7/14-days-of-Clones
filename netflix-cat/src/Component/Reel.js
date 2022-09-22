@@ -16,20 +16,28 @@ export default function Reel({ head, lnk }) {
     getMovies();
   }, [fetchLink]);
   function callMovie(smovie){
+    
     if(showTrailer){
       getTrailer("");
     }else{
-      
       movieTrailer(smovie?.name || smovie?.title || "")
       .then((url)=>{
         const urlParameters = new URLSearchParams(new URL(url).search);
-        getTrailer(urlParameters.get('v'));
+        getTrailer(urlParameters?.get('v'));
+        setTimeout(()=>{document.querySelector(".trailerX").classList.toggle("trailerCome")},2500);
       })
       .catch();
+       
+    }
+  }
+  function closeMovie(){
+    if(showTrailer){
+      getTrailer("");
+      document.querySelector(".trailerX").classList.toggle("trailerCome");
     }
   }
   const opts = {
-    height: "350",
+    height: "300",
     width: "100%",
     playerVars: {
       autoplay: 1,
@@ -39,6 +47,8 @@ export default function Reel({ head, lnk }) {
     <>
       <section>
         <h1>{head}</h1>
+        <div className="clbtn">
+        <p className="trailerX" onClick={closeMovie}>X</p></div>
         <div className="movie-list">
           {movieList.map((smovie, idx) => {
             return (
@@ -56,9 +66,10 @@ export default function Reel({ head, lnk }) {
         </div>
 
         {/* know more about the youtube npm package */}
-        <div>
-       {showTrailer && <Youtube  videoId={showTrailer} opts={opts} />}
-       </div>
+        <div className="trailer-video">
+          
+          {showTrailer && <Youtube  videoId={showTrailer} opts={opts} />}
+          </div>
       </section>
     </>
   );
