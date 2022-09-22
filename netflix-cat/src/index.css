@@ -307,4 +307,8 @@ a {
   nav a {
     max-width: min-content;
   }
+  .clbtn{
+    left: 70%;
+    right: 0;
+  }
 }

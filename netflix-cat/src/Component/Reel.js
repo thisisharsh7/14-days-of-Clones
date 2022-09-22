@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Youtube from "react-youtube";
 import movieTrailer from "movie-trailer";
+import { useCookies } from "react-cookie";
 
 export default function Reel({ head, lnk }) {
   const [movieList, getList] = useState([]);
   const [showTrailer, getTrailer] = useState("");
+  const [cookies, setCookie] = useCookies(["user"]);
+
+
   const fetchLink = `https://api.themoviedb.org/3/${lnk}`;
 
   useEffect(() => {
@@ -15,12 +19,14 @@ export default function Reel({ head, lnk }) {
     }
     getMovies();
   }, [fetchLink]);
+
   function callMovie(smovie, e) {
     if (showTrailer) {
       getTrailer("");
     } else {
       movieTrailer(smovie?.name || smovie?.title || "")
         .then((url) => {
+          setCookie("user", url ,{ path: '/' });
           const urlParameters = new URLSearchParams(new URL(url).search);
           getTrailer(urlParameters?.get("v"));
           setTimeout(
@@ -31,7 +37,7 @@ export default function Reel({ head, lnk }) {
             2000
           );
         })
-        .catch((error)=>alert("Trailer Not Found"));
+        .catch((error)=>{alert("Trailer Not Found")});
     }
   }
   function clearTrailer(e) {
