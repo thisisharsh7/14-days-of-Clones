@@ -117,20 +117,21 @@ nav{
   width:100% ;
   display: flex;
   justify-content: space-between;
-  top:0;
+  align-items: center;
   padding: 1rem 0.5rem;
 }
-nav h1{
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: rgb(213, 0, 0);
+a{
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
 }
 ul{
   list-style: none;
   display: flex;
-  gap:0.3rem;
+  gap:2rem;
+  align-items: center;
 }
+
 button{
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
@@ -139,7 +140,9 @@ button{
   background-color: transparent;
   cursor: pointer;
 }
-
+nav ul li:first-of-type button{
+  padding: 0;
+}
 ul li:nth-last-of-type(1) button{
   background-color: red;
   border-radius: 0.2rem;
@@ -160,6 +163,13 @@ header:after{
   bottom: 0;
   background: linear-gradient(to right,black,transparent 90%);
   position: absolute;
+}
+.bgNavSign{
+  background-image:url("https://assets.nflxext.com/ffe/siteui/vlv3/5fd505fa-f425-4a18-b3cc-00dd2638f541/d638b1fe-b44f-4cb3-b5d8-2106904c3be0/IN-en-20220704-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  background-size: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .detail p{
   color:white;
@@ -187,4 +197,120 @@ header:after{
   color:white;
   border:1px solid white;
 
+}
+.bgNavSign nav{
+  position: absolute;
+  z-index: 10;
+  left:0;
+  right:0;
+}
+.sign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.106);
+  
+  flex:2;
+}
+.sign-box{
+  background-color: rgba(0, 0, 0, 0.651);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 20rem;
+  gap:2rem;
+  padding: 4vw;
+}
+.sign-box h2{
+  font-size: 3rem;
+  font-weight: 900;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap:1.3rem;
+}
+form input{
+  height: 2rem;
+  padding:0.5rem 1rem;
+  border: none;
+  
+}
+nav img{
+  max-width: 12rem;
+}
+
+.checkHelp{
+  display: flex;
+  justify-content: space-between;
+  gap:0.3rem;
+  align-items: center;
+}
+.checkHelp div{
+  display: flex;
+  align-items: center ;
+  gap:0.7rem;
+}
+form input:focus{
+  outline: none;
+}
+form button{
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  background-color: red;
+
+}
+.txtSimple{
+  color:gray;
+}
+form ~ p span:last-child{
+  position: relative;
+  letter-spacing: normal;
+  margin-left: 1rem;
+  --chngeSpc : 0.15rem;
+}
+form ~ p span:last-child::after{
+  position: absolute;
+  content: "";
+  background-color: white;
+  left: 3px;
+  right: 0;
+  
+  height:1px;
+  bottom: -4px;
+}
+form ~ p span:last-child:active{
+  letter-spacing: var(--chngeSpc);
+  transition: letter-spacing 0.5s;
+}
+a{
+  width: max-content;
+}
+@media only screen  and (width<=430px){
+  .bgNavSign{
+    display: grid;
+    place-items: stretch;
+  }
+  nav{
+    min-width: 290px;
+    width: 100%;
+  }
+  .sign{
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+ .sign-box{
+  width: 290px;
+ }
+  nav img {
+    max-width: max(7rem , 50%);
+  }
+  nav ul li:last-of-type button{
+    padding:0.55rem 1.1rem;
+  }
+  nav ul{
+    gap:1rem;
+  }
+  nav a{
+    max-width: min-content;
+  }
 }

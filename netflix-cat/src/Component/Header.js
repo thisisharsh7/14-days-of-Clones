@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Nav from './Nav';
 
 
 export default function Header(props){
@@ -15,17 +16,10 @@ export default function Header(props){
     }
     getHeadMovies();
   }, [fetchHead]);
-  console.log(headMovie);
     return(
         <>
             <header style={{backgroundImage:`url("https://image.tmdb.org/t/p/original/${headMovie?.backdrop_path}")`}}>
-            <nav>
-                <h1>Netflix</h1>
-                <ul>
-                    <li><button type='button' onClick={props.SignIn}>Sign In</button></li>
-                    <li><button type='button' onClick={props.SignUp}>Sign Up</button></li>
-                </ul>
-            </nav>
+            <Nav login={props.newLogin}/>
             <div className='detail'>
                 <h1>{headMovie?.name}</h1>
                 <ul>
