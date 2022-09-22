@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 
-export default function Header(){
+export default function Header(props){
     const [headMovie, getHeadMovie] = useState([]);
   const fetchHead = `https://api.themoviedb.org/3/discover/tv?api_key=a0c53ec1c9833234df4cf45863ddc057&with_networks=213`;
 
@@ -15,15 +15,15 @@ export default function Header(){
     }
     getHeadMovies();
   }, [fetchHead]);
-  console.table(headMovie);
+  console.log(headMovie);
     return(
         <>
-            <header style={{backgroundImage:`url("https://image.tmdb.org/t/p/original/${headMovie?.poster_path}")`}}>
+            <header style={{backgroundImage:`url("https://image.tmdb.org/t/p/original/${headMovie?.backdrop_path}")`}}>
             <nav>
                 <h1>Netflix</h1>
                 <ul>
-                    <li><button>Sign In</button></li>
-                    <li><button>Sign Up</button></li>
+                    <li><button type='button' onClick={props.SignIn}>Sign In</button></li>
+                    <li><button type='button' onClick={props.SignUp}>Sign Up</button></li>
                 </ul>
             </nav>
             <div className='detail'>
