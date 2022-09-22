@@ -37,7 +37,7 @@ export default function Reel({ head, lnk }) {
           );
         })
         .catch((error) => {
-          alert("Trailer Not Found");
+          alert("Trailer Not Found",cookies);
         });
     }
   }
@@ -48,7 +48,7 @@ export default function Reel({ head, lnk }) {
     }
   }
   const opts = {
-    height: "180",
+    height: "300",
     width: "100%",
     playerVars: {
       autoplay: 1,

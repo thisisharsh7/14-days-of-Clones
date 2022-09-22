@@ -41,7 +41,7 @@ section {
 .trailer-video {
   position: absolute;
   width: 100%;
-  bottom: -0.3rem;
+  bottom: -0.8rem;
 }
 
 .clbtn {
@@ -312,12 +312,24 @@ a {
     right: 0;
   }
   .movie-only {
-    max-height: 180px;
+    max-height: 280px;
   }
   .movie-list {
-    max-height: 180px;
+    max-height: 280px;
   }
   main {
     gap: 3.5rem;
   }
+  .detail h1 {
+    font-size: 2.2rem;
+  }
+  .detail p {
+    max-width: 100%;
+  }
+}
+.movie-only {
+  max-height: 280px;
+}
+.movie-list {
+  max-height: 280px;
 }
