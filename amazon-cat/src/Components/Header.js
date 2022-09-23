@@ -24,8 +24,8 @@ export default function Header() {
     }
   }
   return (
-    <header className="bg-denim px-1 py-1 text-white w-300px overflow-x-hidden">
-      <nav className="flex items-center gap-2">
+    <header className="bg-denim pr-2 py-1 text-white w-300px overflow-x-hidden">
+      <nav className="flex items-center h-20 gap-2">
         <div className="px-4 py-0 h-min pt-3 min-w-max">
           <Link to="/">
             <div className="sm:w-max flex text-white items-center h-min">

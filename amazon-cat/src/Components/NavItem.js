@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function NavItem(props) {
   return (
     <div
-      className={` sm:static sm:flex flex flex-col sm:flex-row sm:min-w-max items-center  justify-start sm:py-0 p-5 sm:justify-center gap-5 sm:px-1  absolute sm:bg-transparent sm:transition-none sm:translate-x-0 bg-denim top-12 right-0 bottom-0 ${props.popBlock}`}
+      className={` sm:static sm:flex flex flex-col sm:flex-row sm:min-w-max items-center  justify-start sm:py-0 p-5 sm:justify-center gap-5 sm:px-1  absolute sm:bg-transparent sm:transition-none sm:translate-x-0 bg-denim top-20 right-0 bottom-0 ${props.popBlock}`}
     >
       <p className="flex flex-col items-center h-min">
         <span className="text-xs">Hello</span>
