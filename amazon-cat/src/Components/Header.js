@@ -5,6 +5,7 @@ import menu from "./Images/menu.gif";
 import stmenu from "./Images/stmenu.png";
 import cross from "./Images/cross.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [set, getSet] = useState(stmenu);
@@ -26,16 +27,18 @@ export default function Header() {
     <header className="bg-denim px-1 py-1 text-white w-300px overflow-x-hidden">
       <nav className="flex items-center gap-2">
         <div className="px-4 py-0 h-min pt-3 min-w-max">
-          <div className="sm:w-max flex text-white items-center h-min">
-            <img
-              src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-              alt="amazon-logo"
-              className="w-14 sm:w-28"
-            />
-            <span className="font-bold sm:text-xl pb-3 sm:pb-5 text-sm">
-              .in
-            </span>
-          </div>
+          <Link to="/">
+            <div className="sm:w-max flex text-white items-center h-min">
+              <img
+                src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+                alt="amazon-logo"
+                className="w-14 sm:w-28"
+              />
+              <span className="font-bold sm:text-xl pb-3 sm:pb-5 text-sm">
+                .in
+              </span>
+            </div>
+          </Link>
         </div>
         <div className="flex w-full  items-center sm:w-8/12 h-min pl-3  bg-white text-denim">
           <input

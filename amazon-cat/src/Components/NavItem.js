@@ -1,5 +1,6 @@
 import React from "react";
 import sBag from "./Images/bag.png";
+import { Link } from "react-router-dom";
 
 export default function NavItem(props) {
   return (
@@ -8,7 +9,7 @@ export default function NavItem(props) {
     >
       <p className="flex flex-col items-center h-min">
         <span className="text-xs">Hello</span>
-        <span className="font-bold min-w-max">Sign In</span>
+        <Link to="/sign-in"><span className="font-bold min-w-max">Sign In</span></Link>
       </p>
       <p className="flex flex-col items-center h-min">
         <span className="text-xs">Returns</span>
@@ -19,7 +20,8 @@ export default function NavItem(props) {
         <span className="font-bold min-w-max">Prime</span>
       </p>
       <div className="sm:flex items-center gap-2">
-        <img src={sBag} alt="cart" className="w-12" />
+      <Link to="/cart"><img src={sBag} alt="cart" className="w-12" /></Link>
+        
         {/* <a target="_blank" href="https://icons8.com/icon/84026/menu">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
         <p className="text-center">0</p>
       </div>

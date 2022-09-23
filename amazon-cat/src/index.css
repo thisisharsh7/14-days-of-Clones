@@ -7,8 +7,9 @@
   padding: 0;
 }
 body{
-  max-width: 1550px;
+  max-width: 1800px;
   margin:0 auto;
   min-width: 275px;
   overflow-x: hidden;
+  min-height: 100vh;
 }
