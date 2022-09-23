@@ -6,3 +6,9 @@
   margin:0;
   padding: 0;
 }
+body{
+  max-width: 1550px;
+  margin:0 auto;
+  min-width: 275px;
+  overflow-x: hidden;
+}
