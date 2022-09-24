@@ -18,7 +18,8 @@ const showSavedCnt = () =>{
 const showSavedCart = () => {
   let savedCart = localStorage.getItem("cart-product");
   if(savedCart !== null){
-    return savedCart.split(",");
+    console.log(savedCart);
+    return savedCart && savedCart.split(" , ");
   }else{
     return [];
   }
@@ -30,10 +31,14 @@ export default function App() {
   
   function AddToCart(e){
     getItemCnt(setItemCnt + 1);
-    getCart(()=> {return ((setCart===[]) ? [ e.target.parentElement.children[0].outerHTML] : [ ...setCart , e.target.parentElement.children[0].outerHTML] )});
+    getCart(()=> {return [ ...setCart , e.target.parentElement.children[0].outerHTML] });
   }   
   function deleteToCart(e){
-    console.log('deleteCart');
+    getItemCnt(setItemCnt-1);
+    const k = `${e.target.parentElement.children[1].innerHTML}`;
+    getCart(setCart.filter((scart)=>{
+      return  `${scart}`!==k;
+    }));
   }
   useEffect(()=>{
     localStorage.setItem("cart-cnt",JSON.stringify(setItemCnt));
