@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Product(props) {
   return (
-    <div className="product-card border basis-max border-gray-500 p-3 flex flex-col gap-6 items-start">
+    <div className="product-card border basis-max border-gray-500 p-3 flex flex-col gap-6 items-start bg-white">
       <div className="product flex flex-col gap-2">
         <h1>Anything everything everywhere</h1>
         <p>⭐⭐⭐⭐⭐</p>

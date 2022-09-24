@@ -30,8 +30,8 @@ export default function App() {
   const [setCart , getCart] = useState(showSavedCart);
   
   function AddToCart(e){
-    getItemCnt(setItemCnt + 1);
-    getCart(()=> {return [ ...setCart , e.target.parentElement.children[0].outerHTML] });
+    (setCart.includes(e.target.parentElement.children[0].outerHTML)) ? getItemCnt(setItemCnt) :   getItemCnt(setItemCnt + 1);
+    getCart(()=> {return (setCart.includes(e.target.parentElement.children[0].outerHTML)) ? [...setCart] : [ ...setCart , e.target.parentElement.children[0].outerHTML] });
   }   
   function deleteToCart(e){
     getItemCnt(setItemCnt-1);
@@ -39,6 +39,7 @@ export default function App() {
     getCart(setCart.filter((scart)=>{
       return  `${scart}`!==k;
     }));
+   
   }
   useEffect(()=>{
     localStorage.setItem("cart-cnt",JSON.stringify(setItemCnt));
