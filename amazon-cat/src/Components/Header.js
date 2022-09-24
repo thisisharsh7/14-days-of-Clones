@@ -24,8 +24,8 @@ export default function Header(props) {
     }
   }
   return (
-    <header className="bg-denim pr-2 py-1 text-white w-300px overflow-x-hidden">
-      <nav className="flex items-center h-20 gap-2">
+    <header className="bg-denim pr-2 py-1 top-0 text-white w-300px w-full sticky z-20 overflow-x-hidden ">
+      <nav className="flex items-center sm:h-20 gap-2">
         <div className="px-4 py-0 h-min pt-3 min-w-max">
           <Link to="/">
             <div className="sm:w-max flex text-white items-center h-min">
@@ -40,7 +40,7 @@ export default function Header(props) {
             </div>
           </Link>
         </div>
-        <div className="flex w-full  items-center sm:w-8/12 h-min pl-3  bg-white text-denim z-30">
+        <div className="flex  items-center w-full sm:w-8/12 h-min pl-3  bg-white text-denim z-30">
           <input
             type="text"
             className="border-none focus:outline-none min-w-48 w-full pr-2 "

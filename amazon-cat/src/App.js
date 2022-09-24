@@ -18,8 +18,7 @@ const showSavedCnt = () =>{
 const showSavedCart = () => {
   let savedCart = localStorage.getItem("cart-product");
   if(savedCart !== null){
-    console.log(savedCart);
-    return savedCart && savedCart.split(" , ");
+    return  savedCart?.split(",");
   }else{
     return [];
   }
@@ -30,8 +29,9 @@ export default function App() {
   const [setCart , getCart] = useState(showSavedCart);
   
   function AddToCart(e){
-    (setCart.includes(e.target.parentElement.children[0].outerHTML)) ? getItemCnt(setItemCnt) :   getItemCnt(setItemCnt + 1);
-    getCart(()=> {return (setCart.includes(e.target.parentElement.children[0].outerHTML)) ? [...setCart] : [ ...setCart , e.target.parentElement.children[0].outerHTML] });
+    getItemCnt(setItemCnt + 1);
+    getCart(()=> {return [ ...setCart , e.target.parentElement.children[0].outerHTML] });
+
   }   
   function deleteToCart(e){
     getItemCnt(setItemCnt-1);
@@ -54,7 +54,7 @@ export default function App() {
           element={
             <>
               <Header ItemCnt={setItemCnt}/>
-              <Main AddTo={AddToCart} />
+              <Main AddTo={AddToCart} itemCnt={setItemCnt}/>
             </>
           }
         />
