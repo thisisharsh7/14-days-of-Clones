@@ -7,7 +7,7 @@ import cross from "./Images/cross.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
   const [set, getSet] = useState(stmenu);
   const [showNot, getShow] = useState("hidden");
   function pause(e) {
@@ -48,7 +48,7 @@ export default function Header() {
           <img src={sIcon} alt="search-icon" className="w-8 p-2 bg-srchC" />
           {/* <a target="_blank" href="https://icons8.com/icon/84026/search">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
         </div>
-        <NavItem popBlock={showNot} />
+        <NavItem popBlock={showNot} ItemCnt={props.ItemCnt} />
         <img
           src={set}
           alt="menu"

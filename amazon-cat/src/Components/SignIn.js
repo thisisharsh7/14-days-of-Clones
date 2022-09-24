@@ -17,9 +17,9 @@ export default function SignIn() {
           </Link>
       </header>
       <main className="sign w-full grid place-items-center mt-5 p-1 pb-8">
-        <div className="sign-box border border-black border-opacity-50 px-4 pt-3 pb-5">
+        <div className="sign-box border w-11/12 sm:w-fit border-black border-opacity-50 px-4 pt-3 pb-5">
           <h2 className="text-4xl font-bold pb-5">Sign In</h2>
-          <form className="flex flex-col w-64 sm:w-80 gap-4 mb-5">
+          <form className="flex flex-col w-full sm:w-80 gap-4 mb-5">
           <div className="flex flex-col">
             <label htmlFor="email text-gray-900">Email: </label>
             <input id="email" type="email" className="border-2 border-gray-900 h-8 p-2" />

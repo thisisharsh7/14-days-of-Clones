@@ -4,8 +4,14 @@ import Main from "./Components/Main";
 import SignIn from "./Components/SignIn";
 import { Routes, Route } from "react-router-dom";
 import Cart from "./Components/Cart";
+import { useState } from "react";
 
 export default function App() {
+  const [setItemCnt , getItemCnt] = useState(0);
+  function AddToCart(e){
+    getItemCnt(setItemCnt + 1);
+    console.log(e.target.parentElement.children[0])
+  }
   return (
     <>
       <Routes>
@@ -13,8 +19,8 @@ export default function App() {
           path="/"
           element={
             <>
-              <Header />
-              <Main />
+              <Header ItemCnt={setItemCnt}/>
+              <Main AddTo={AddToCart} />
             </>
           }
         />
@@ -23,7 +29,7 @@ export default function App() {
           path="/cart"
           element={
             <>
-              <Header />
+              <Header ItemCnt={setItemCnt}/>
               <Cart />
             </>
           }
