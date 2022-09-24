@@ -6,7 +6,7 @@ export default function Product(props) {
       <div className="product flex flex-col gap-2">
         <h1>Anything everything everywhere</h1>
         <p>⭐⭐⭐⭐⭐</p>
-        <img src="" alt="product-1" />
+        <img src={props.imgSrc} alt="product-1"  className="w-36 h-36"/>
       </div>
       <button type="button" className="bg-yellow-500 px-3 py-1 font-medium" onClick={props.AddTo}>
         Add to Cart

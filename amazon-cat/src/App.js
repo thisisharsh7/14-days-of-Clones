@@ -15,19 +15,31 @@ const showSavedCnt = () =>{
     return 0;
   }
 }
+const showSavedCart = () => {
+  let savedCart = localStorage.getItem("cart-product");
+  if(savedCart !== null){
+    return savedCart.split(",");
+  }else{
+    return [];
+  }
+}
 
 export default function App() {
   const [setItemCnt , getItemCnt] = useState(showSavedCnt);
-  const [setCart , getCart] = useState([]);
+  const [setCart , getCart] = useState(showSavedCart);
   
   function AddToCart(e){
     getItemCnt(setItemCnt + 1);
-    getCart(e.target.parentElement.children[0]);
+    getCart(()=> {return ((setCart===[]) ? [ e.target.parentElement.children[0].outerHTML] : [ ...setCart , e.target.parentElement.children[0].outerHTML] )});
+  }   
+  function deleteToCart(e){
+    console.log('deleteCart');
   }
   useEffect(()=>{
     localStorage.setItem("cart-cnt",JSON.stringify(setItemCnt));
-  },[setItemCnt])
-  console.log(setCart);
+    localStorage.setItem("cart-product" , setCart);
+  },[setItemCnt,setCart])
+
   return (
     <>
       <Routes>
@@ -46,7 +58,7 @@ export default function App() {
           element={
             <>
               <Header ItemCnt={setItemCnt}/>
-              <Cart />
+              <Cart cartItem={setCart} deleteCart={deleteToCart} ItemCnt={setItemCnt}/>
             </>
           }
         />
