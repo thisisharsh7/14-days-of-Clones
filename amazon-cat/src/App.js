@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const showSavedCnt = () =>{
-  let savedCnt = localStorage.getItem("cart-cnt");
+  const savedCnt = localStorage.getItem("cart-cnt");
   if(savedCnt !== null){
     return JSON.parse(savedCnt);
   }else{
@@ -16,18 +16,26 @@ const showSavedCnt = () =>{
   }
 }
 const showSavedCart = () => {
-  let savedCart = localStorage.getItem("cart-product");
+  const savedCart = localStorage.getItem("cart-product");
   if(savedCart !== null){
     return  savedCart?.split(",");
   }else{
     return [];
   }
 }
+const showPrice = () => {
+  const savedPrice = localStorage.getItem("total-price");
+  if(savedPrice !== null){
+    return  savedPrice;
+  }else{
+    return 0;
+  }
+}
 
 export default function App() {
   const [setItemCnt , getItemCnt] = useState(showSavedCnt);
   const [setCart , getCart] = useState(showSavedCart);
-  const [setPrice , getPrice] = useState(0);
+  const [setPrice , getPrice] = useState(showPrice);
   
   function AddToCart(e){
     getItemCnt(setItemCnt + 1);
@@ -43,12 +51,13 @@ export default function App() {
     getCart(setCart.filter((scart)=>{
       return  `${scart}`!==k;
     }));
-    getPrice(Number(m.children[0].children[2].children[0].innerText) - setPrice);
+    getPrice(Math.abs(Number(m.children[0].children[2].children[0].innerText) - setPrice));
   }
   useEffect(()=>{
     localStorage.setItem("cart-cnt",JSON.stringify(setItemCnt));
     localStorage.setItem("cart-product" , setCart);
-  },[setItemCnt,setCart])
+    localStorage.setItem("total-price", setPrice);
+  },[setItemCnt,setCart , setPrice])
 
   return (
     <>
