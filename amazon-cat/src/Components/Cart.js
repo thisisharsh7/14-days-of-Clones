@@ -1,7 +1,7 @@
 import React from "react";
 import cross from "./Images/cross.png";
 
-export default function Cart({cartItem , deleteCart, ItemCnt}) {
+export default function Cart({cartItem , deleteCart, ItemCnt , pricing}) {
 
   
   
@@ -9,8 +9,8 @@ export default function Cart({cartItem , deleteCart, ItemCnt}) {
     <main className="pb-10">
     <div className="bg-slate-100 relative">
       <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_45M_v2_1x._CB432458380_.jpg" alt="cart-banner" className="sm:w-80 w-full" />
-      <div className="absolute right-0 z-30 bg-zinc-300 bottom-0 sm:top-0 sm:py-0 py-3 flex flex-col gap-1  justify-center px-5 md:opacity-100 opacity-60">
-        <p>Cart-total: <strong className="text-green-800 text-2xl">24$</strong></p>
+      <div className="absolute right-0  bg-zinc-300 bottom-0 sm:top-0 sm:py-0 py-3 flex flex-col gap-1  justify-center px-5 md:opacity-100 opacity-60">
+        <p>Cart-total: <strong className="text-green-800 text-2xl">{pricing}$</strong></p>
         <p>Cart-item: <span className="font-bold text-yellow-600 text-2xl">{ItemCnt}</span></p>
       </div>
       </div>

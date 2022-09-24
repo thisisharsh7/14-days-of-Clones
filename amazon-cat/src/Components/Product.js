@@ -13,7 +13,7 @@ export default function Product(props) {
       <div className={`${props.cntItem}product flex  flex-col gap-2`}>
         <h1>Anything everything everywhere</h1>
         <p >{star.slice(0,r)}</p>
-        <strong className="text-green-800 text-2xl price">{r*13}$</strong>
+        <strong className="text-green-800 text-2xl price"><span>{r*13}</span><span>$</span></strong>
         <img src={props.imgSrc} alt="product-show"  className="w-40 h-40"/>
       </div>
       <button type="button" className="bg-yellow-500 px-3 py-1 font-medium" onClick={props.AddTo}>

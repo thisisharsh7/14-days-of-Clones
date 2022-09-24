@@ -27,19 +27,23 @@ const showSavedCart = () => {
 export default function App() {
   const [setItemCnt , getItemCnt] = useState(showSavedCnt);
   const [setCart , getCart] = useState(showSavedCart);
+  const [setPrice , getPrice] = useState(0);
   
   function AddToCart(e){
     getItemCnt(setItemCnt + 1);
-    getCart(()=> {return [ ...setCart , e.target.parentElement.children[0].outerHTML] });
-
+    const k = e.target.parentElement.children[0];
+    getCart(()=> {return [ ...setCart , k.outerHTML] });
+    getPrice(Number(k.children[2].children[0].innerText) + setPrice);
+    
   }   
   function deleteToCart(e){
     getItemCnt(setItemCnt-1);
-    const k = `${e.target.parentElement.children[1].innerHTML}`;
+    const m = e.target.parentElement.children[1];
+    const k = `${m.innerHTML}`;
     getCart(setCart.filter((scart)=>{
       return  `${scart}`!==k;
     }));
-   
+    getPrice(Number(m.children[0].children[2].children[0].innerText) - setPrice);
   }
   useEffect(()=>{
     localStorage.setItem("cart-cnt",JSON.stringify(setItemCnt));
@@ -64,7 +68,7 @@ export default function App() {
           element={
             <>
               <Header ItemCnt={setItemCnt}/>
-              <Cart cartItem={setCart} deleteCart={deleteToCart} ItemCnt={setItemCnt}/>
+              <Cart cartItem={setCart} deleteCart={deleteToCart} ItemCnt={setItemCnt} pricing={setPrice}/>
             </>
           }
         />
