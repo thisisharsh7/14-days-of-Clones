@@ -43,9 +43,14 @@ export default function Header(props) {
         <div className="flex  items-center w-full sm:w-8/12 h-min pl-3  bg-white text-denim z-30">
           <input
             type="text"
-            className="border-none focus:outline-none min-w-48 w-full pr-2" placeholder="Search not work"
+            className="border-none focus:outline-none min-w-48 w-full pr-2"
+            placeholder="Search not work"
           />
-          <img src={sIcon} alt="search-icon" className="w-8 p-2 bg-srchC cursor-pointer" />
+          <img
+            src={sIcon}
+            alt="search-icon"
+            className="w-8 p-2 bg-srchC cursor-pointer"
+          />
           {/* <a target="_blank" href="https://icons8.com/icon/84026/search">Menu</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */}
         </div>
         <NavItem popBlock={showNot} ItemCnt={props.ItemCnt} />
