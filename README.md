@@ -1,7 +1,7 @@
 Repository for the website clones..
 
 # Netflix Clone
-(Live)[https://netflix-caties-by-h.netlify.app/]
+(Live)[https://yes-netflix.netlify.app/]
 ![netflix](./web-screenshot/netflix.jpg)
 * Technology used: React Js, Some external npm Pakages, API.
 * CSS is used for design here.
@@ -11,6 +11,14 @@ Repository for the website clones..
 * react-youtube: For youtube player
 * movie-trailer: For searching movie by it's name and returning the promise as url
 * react-router-dom: For switching between Sign In, Sign out and Home page without loading the page again and again.
+
+# Amazon Clone
+(Live)[https://yes-amazon.netlify.app/]
+![netflix](./web-screenshot/amazon.jpg)
+* Technology used: React Js, Tailwind CSS.
+* Tailwind is used for design here.
+* React router Dom is used for switching between the cart, Sign in and home Pages.
+* Local storage is used for saving the user data and re-render it on every page loading.
 
 
 
