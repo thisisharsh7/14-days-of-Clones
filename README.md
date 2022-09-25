@@ -14,7 +14,7 @@ Repository for the website clones..
 
 # Amazon Clone
 (Live)[https://yes-amazon.netlify.app/]
-![netflix](./web-screenshot/amazon.jpg)
+![amazon](./web-screenshot/amazon.jpg)
 * Technology used: React Js, Tailwind CSS.
 * Tailwind is used for design here.
 * React router Dom is used for switching between the cart, Sign in and home Pages.
