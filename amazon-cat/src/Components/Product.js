@@ -11,7 +11,7 @@ export default function Product(props) {
   return (
     <div className="product-card border basis-max border-gray-500 p-3 flex flex-col gap-6 items-start bg-white">
       <div className={`${props.cntItem}product flex  flex-col gap-2`}>
-        <h1>Anything everything everywhere</h1>
+        <h1>{props.name}</h1>
         <p >{star.slice(0,r)}</p>
         <strong className="text-green-800 text-2xl price"><span>{r*13}</span><span>$</span></strong>
         <img src={props.imgSrc} alt="product-show"  className="w-40 h-40"/>

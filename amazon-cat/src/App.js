@@ -40,7 +40,7 @@ export default function App() {
   function AddToCart(e){
     getItemCnt(setItemCnt + 1);
     const k = e.target.parentElement.children[0];
-    getCart(()=> {return [ ...setCart , k.outerHTML] });
+    getCart(()=> {return (setItemCnt) ? [ ...setCart , k.outerHTML] : [k.outerHTML]});
     getPrice(Number(k.children[2].children[0].innerText) + setPrice);
     
   }   

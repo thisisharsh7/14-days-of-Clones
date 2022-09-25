@@ -24,7 +24,7 @@ export default function Cart({ cartItem, deleteCart, ItemCnt, pricing }) {
         </div>
       </div>
       <div className="flex flex-wrap gap-4 mx-3  xl:justify-start sm:justify-center justify-center pt-4">
-        {cartItem && ItemCnt ? (
+        {(cartItem && ItemCnt) ? (
           cartItem.map((scart, idx) => {
             return (
               <div
