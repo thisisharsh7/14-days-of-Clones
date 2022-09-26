@@ -16,6 +16,15 @@ export default function index() {
     if (_token) {
       setToken(_token);
       spotify.setAccessToken(_token);
+      spotify.getMe().then((user) => {
+        console.log(user);
+      });
+      spotify.getUserPlaylists().then((playlists) => {
+        console.log(playlists);
+      });
+      spotify.getPlaylist("37i9dQZF1E34Ucml4HHx1w").then((playlist) => {
+        console.log(playlist);
+      });
     }
 
     
