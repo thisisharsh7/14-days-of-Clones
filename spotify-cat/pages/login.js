@@ -1,6 +1,6 @@
-import { loginUrl } from "../Components/Spotify";
+import { loginUrl } from "../Components/spotify";
 
-export default function Login() {
+export default function login() {
   return (
     <div className="flex flex-col gap-12 items-center min-h-screen sm:justify-center justify-start p-4">
       <img src="https://music-b26f.kxcdn.com/wp-content/uploads/2017/06/635963274692858859903160895_spotify-logo-horizontal-black.jpg" alt="spotify-logo" className="md:max-w-3xl sm:max-w-md " />
