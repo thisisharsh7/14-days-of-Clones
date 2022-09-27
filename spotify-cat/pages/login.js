@@ -1,4 +1,4 @@
-import { loginUrl } from "../Components/spotify";
+import { loginUrl } from "../External/spotify";
 
 export default function login() {
   return (
