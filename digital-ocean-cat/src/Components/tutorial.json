@@ -1,56 +1,64 @@
 [
   {
+    "id": 1,
     "type": "tutorial",
-    "isrc": "./images/mysql.jpg",
+    "isrc": "mysql",
     "intro": "How To Install MySQL on Ubuntu 20.04",
     "date": "July 30, 2020"
   },
 
   {
+    "id": 2,
     "type": "tutorial",
-    "isrc": "./images/react.jpg",
+    "isrc": "react",
     "intro": "How To Deploy a React Application to DigitalOcean App Platform",
     "date": "December 18, 2020"
   },
 
   {
+    "id": 3,
     "type": "tutorial",
-    "isrc": "./images/nodejs.jpg",
+    "isrc": "nodejs",
     "intro": "How To Install Node.js on Ubuntu 20.04",
     "date": "August 9, 2020"
   },
 
   {
+    "id": 4,
     "type": "blog",
-    "isrc": "./images/saas.jpg",
+    "isrc": "saas",
     "intro": "How to scale your SaaS product without breaking the bank",
     "date": "June 22, 2021"
   },
 
   {
+    "id": 5,
     "type": "blog",
-    "isrc": "./images/kubernetes.jpg",
+    "isrc": "kubernetes",
     "intro": "Contributing to open source software: Kubernetes",
     "date": "June 15, 2021"
   },
 
   {
+    "id": 6,
     "type": "tutorial",
-    "isrc": "./images/python.jpg",
+    "isrc": "python",
     "intro": "How To Code in Python",
     "date": "August 23, 2021"
   },
 
   {
+    "id": 7,
     "type": "blog",
-    "isrc": "./images/mongodb.jpg",
+    "isrc": "mongodb",
     "intro": "Introducing DigitalOcean Managed MongoDB – a fully managed, database as a service for modern apps",
     "date": "June 29, 2021"
   },
 
   {
+    "id": 8,
     "type": "tutorial",
-    "isrc": "./images/cloud.jpg",
+    "isrc": "cloud",
     "intro": "Multi-cloud vs hybrid cloud: Everything your business needs to know",
     "date": "July 22, 2021"
   }

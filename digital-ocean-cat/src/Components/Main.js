@@ -10,11 +10,11 @@ import sbutton from "./images/sbutton.svg";
 import tbutton from "./images/tbutton.svg";
 import fobutton from "./images/fobutton.svg";
 import doc1 from "./images/doc1.svg";
-import saas from "./images/saas.jpg";
 import data from "./tutorial.json";
 
 export default function Main() {
   const [over, getOver] = useState("");
+  
   return (
     <main className="relative pb-20">
       <section className=" first pt-12  pb-24 flex flex-col items-center gap-8 relative">
@@ -278,24 +278,40 @@ export default function Main() {
           </a>
         </div>
       </section>
-      <section className="py-24 bg-red-800">
-        <div className="flex flex-wrap bg-blue-900 max-w-screen-2xl p-6 mx-auto">
-          
-          <div className="flex flex-col gap-10 max-w-xs bg-white border-2 rounded-2xl pb-5">
+      <section className="py-24">
+        <div className="flex gap-6 flex-wrap max-w-screen-2xl p-6 mx-auto items-start justify-center">
+        {
+          data.map((sdata)=>{
+            return(
+              <div key={sdata.id} className="flex flex-col gap-10 max-w-xs bg-white border-2 rounded-2xl pb-5 cursor-pointer">
             <img
-              src={saas}
-              alt="saas"
+              src={require(`./images/${sdata.isrc}.jpg`)}
+              alt={sdata.isrc}
               className="p-0 rounded-none rounded-t-2xl"
             />
-            <div className="flex flex-col gap-2 pl-8">
-              <h1 className="text-lg text-gray-500">tutorial</h1>
+            <div className="flex flex-col gap-2 pl-8 pr-2">
+              <h1 className="text-lg text-gray-500">{sdata.type}</h1>
               <p className="font-medium text-zinc-800 text-xl">
-                How To Install MySQL on Ubuntu 20.04
+                {sdata.intro}
               </p>
             </div>
-            <p className="pl-8 text-gray-500">July 30, 2020</p>
+            <p className="pl-8 text-gray-500">{sdata.date}</p>
           </div>
+            )
+          })
+        }
         </div>
+      </section>
+      <section>
+        <div className="flex flex-col items-center gap-8 py-8 px-10 bg-teal-300">
+            <div className="flex flex-col gap-3 text-center">
+              <h1 className="text-4xl text-sky-900">Start building today</h1>
+              <p className="max-w-xl text-gray-600">
+              Sign up now and you'll be up and running on DigitalOcean in just minutes.
+              </p>
+            </div>
+            <button className="bg-white font-medium border-2 px-4 py-1 rounded-md">Sign up to get started</button>
+            </div>
       </section>
     </main>
   );
