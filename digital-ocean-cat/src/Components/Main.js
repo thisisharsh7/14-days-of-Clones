@@ -10,6 +10,8 @@ import sbutton from "./images/sbutton.svg";
 import tbutton from "./images/tbutton.svg";
 import fobutton from "./images/fobutton.svg";
 import doc1 from "./images/doc1.svg";
+import saas from "./images/saas.jpg";
+import data from "./tutorial.json";
 
 export default function Main() {
   const [over, getOver] = useState("");
@@ -216,12 +218,13 @@ export default function Main() {
         </div>
       </section>
       <section className="pt-20">
-      <div className="flex bg-blue-900 text-white max-w-max mx-auto  rounded-3xl">
-      <div className="flex flex-col items-start gap-4 py-6 px-10">
+        <div className="flex bg-blue-900 text-white max-w-max mx-auto  rounded-3xl">
+          <div className="flex flex-col items-start gap-4 py-6 px-10">
             <div className="flex flex-col gap-8">
               <h1 className="text-3xl ">A cloud for your entire journey</h1>
               <p className="max-w-xl">
-              Build robust applications using a comprehensive portfolio of compute, storage, database, and networking products.
+                Build robust applications using a comprehensive portfolio of
+                compute, storage, database, and networking products.
               </p>
             </div>
             <a
@@ -242,35 +245,57 @@ export default function Main() {
               <span className={over}>{"-->"}</span>
             </a>
           </div>
-          <img src={doc1} alt="design1" className="p-0 mt-6"/>
-          </div>
+          <img src={doc1} alt="design1" className="p-0 mt-6" />
+        </div>
       </section>
       <section className="pt-24">
-      <div className="flex flex-col items-center gap-6 py-6 px-1 text-blue-900 max-w-max mx-auto  rounded-3xl">
-            <div className="flex flex-col gap-8 text-center">
-              <h1 className="text-4xl ">Grow with a global community</h1>
-              <p className="max-w-xl text-gray-600">
-              Our community is made up of people all over the world, who are driven to develop software and grow businesses in the cloud. Learn from other cloud users through open tutorials, resources, and events.
+        <div className="flex flex-col items-center gap-6 py-6 px-1 text-blue-900 max-w-max mx-auto  rounded-3xl">
+          <div className="flex flex-col gap-8 text-center">
+            <h1 className="text-4xl ">Grow with a global community</h1>
+            <p className="max-w-xl text-gray-600">
+              Our community is made up of people all over the world, who are
+              driven to develop software and grow businesses in the cloud. Learn
+              from other cloud users through open tutorials, resources, and
+              events.
+            </p>
+          </div>
+          <a
+            href="/"
+            className=" font-semibold text-base text-sky-800 flex gap-1"
+            onMouseOver={() => {
+              getOver(
+                "transition-transform duration-300 delay-75 translate-x-3"
+              );
+            }}
+            onMouseLeave={() => {
+              getOver(
+                "transition-transform duration-300 delay-75 translate-x-0"
+              );
+            }}
+          >
+            <span>Join our community</span>
+            <span className={over}>{"-->"}</span>
+          </a>
+        </div>
+      </section>
+      <section className="py-24 bg-red-800">
+        <div className="flex flex-wrap bg-blue-900 max-w-screen-2xl p-6 mx-auto">
+          
+          <div className="flex flex-col gap-10 max-w-xs bg-white border-2 rounded-2xl pb-5">
+            <img
+              src={saas}
+              alt="saas"
+              className="p-0 rounded-none rounded-t-2xl"
+            />
+            <div className="flex flex-col gap-2 pl-8">
+              <h1 className="text-lg text-gray-500">tutorial</h1>
+              <p className="font-medium text-zinc-800 text-xl">
+                How To Install MySQL on Ubuntu 20.04
               </p>
             </div>
-            <a
-              href="/"
-              className=" font-semibold text-base text-sky-800 flex gap-1"
-              onMouseOver={() => {
-                getOver(
-                  "transition-transform duration-300 delay-75 translate-x-3"
-                );
-              }}
-              onMouseLeave={() => {
-                getOver(
-                  "transition-transform duration-300 delay-75 translate-x-0"
-                );
-              }}
-            >
-              <span>Join our community</span>
-              <span className={over}>{"-->"}</span>
-            </a>
+            <p className="pl-8 text-gray-500">July 30, 2020</p>
           </div>
+        </div>
       </section>
     </main>
   );
