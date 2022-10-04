@@ -3,7 +3,7 @@ import footerLogo from "./images/footerlogo.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-sky-600 text-white pt-8 pb-8">
+    <footer className="bg-blue-600 text-white pt-8 pb-8">
       <ul className="flex mx-auto max-w-screen-xl justify-between px-3 pb-8">
         <li className="flex flex-col  font-bold cursor-auto gap-5 text-2xl ">
           Company

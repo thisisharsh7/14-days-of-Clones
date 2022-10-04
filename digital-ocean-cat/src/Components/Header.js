@@ -16,7 +16,7 @@ export default function Header() {
           <li>Sales</li>
         </ul>
       </div>
-      <div className="mid py-3 px-0">
+      <div className="mid py-3 px-0 shadow-box">
         <nav className="flex max-w-screen-2xl my-0 mx-auto py-0 px-4 text-base  items-center font-medium">
           <img
             src="https://www.digitalocean.com/_next/static/media/logo.87a8f3b8.svg"
@@ -35,7 +35,7 @@ export default function Header() {
           </ul>
         </nav>
       </div>
-      <div className="absolute w-full">
+      <div className="absolute w-full shadow-box">
       <div className={`top py-3 px-0  justify-center items-center cursor-pointer transition-all duration-700 delay-100 ${show} hover:bg-green-400 text-md relative rounded-b-md`}>
         <p className="text-white"><span className="font-semibold">Free credit active: </span><span>Get started on DigitalOcean with a $200, 60-day credit for new users.</span></p>
         <p className="absolute right-3 z-10 cursor-pointer font-semibold hover:text-blue-900 text-white" onClick={()=>{hide("hidden")}}>X</p>
