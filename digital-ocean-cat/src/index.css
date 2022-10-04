@@ -40,3 +40,17 @@ h1 {
 .first {
   background-color: rgb(0, 105, 255);
 }
+footer ul li ul li {
+  padding: 0;
+  cursor: pointer;
+}
+.footer-icon li{
+  padding: 0;
+}
+.footer-icon li img{
+  padding: 0;
+  min-width: max-content;
+}
+.footer-icon li img:hover{
+  background-color: rgb(146, 222, 241);
+}
