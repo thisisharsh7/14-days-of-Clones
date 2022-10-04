@@ -2,12 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: black;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
 }
 
 .top {
@@ -16,16 +20,23 @@ body {
 }
 .mid {
   background-color: rgb(255, 255, 255);
-  color: rgb(36, 51, 90);
+  color: rgb(22, 41, 90);
 }
-li , img{
+li,
+img {
   cursor: pointer;
-  padding: 0.23rem 0.46rem;
+  padding: 0.3rem 0.6rem;
   border-radius: 0.3rem;
 }
-nav li:hover{
+nav li:hover {
   background-color: rgb(214, 220, 234);
 }
-.top li:hover{
+.top li:hover {
   color: rgb(255, 255, 255);
+}
+h1 {
+  font-family: "Epilogue", sans-serif;
+}
+.first {
+  background-color: rgb(0, 105, 255);
 }
