@@ -1,0 +1,57 @@
+[
+  {
+    "type": "tutorial",
+    "isrc": "./images/mysql.jpg",
+    "intro": "How To Install MySQL on Ubuntu 20.04",
+    "date": "July 30, 2020"
+  },
+
+  {
+    "type": "tutorial",
+    "isrc": "./images/react.jpg",
+    "intro": "How To Deploy a React Application to DigitalOcean App Platform",
+    "date": "December 18, 2020"
+  },
+
+  {
+    "type": "tutorial",
+    "isrc": "./images/nodejs.jpg",
+    "intro": "How To Install Node.js on Ubuntu 20.04",
+    "date": "August 9, 2020"
+  },
+
+  {
+    "type": "blog",
+    "isrc": "./images/saas.jpg",
+    "intro": "How to scale your SaaS product without breaking the bank",
+    "date": "June 22, 2021"
+  },
+
+  {
+    "type": "blog",
+    "isrc": "./images/kubernetes.jpg",
+    "intro": "Contributing to open source software: Kubernetes",
+    "date": "June 15, 2021"
+  },
+
+  {
+    "type": "tutorial",
+    "isrc": "./images/python.jpg",
+    "intro": "How To Code in Python",
+    "date": "August 23, 2021"
+  },
+
+  {
+    "type": "blog",
+    "isrc": "./images/mongodb.jpg",
+    "intro": "Introducing DigitalOcean Managed MongoDB – a fully managed, database as a service for modern apps",
+    "date": "June 29, 2021"
+  },
+
+  {
+    "type": "tutorial",
+    "isrc": "./images/cloud.jpg",
+    "intro": "Multi-cloud vs hybrid cloud: Everything your business needs to know",
+    "date": "July 22, 2021"
+  }
+]
