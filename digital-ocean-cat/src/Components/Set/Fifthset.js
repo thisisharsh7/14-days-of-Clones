@@ -32,7 +32,11 @@ export default function Fifthset() {
             <span className={over}>{"-->"}</span>
           </a>
         </div>
-        <img src={doc1} alt="design1" className="p-0 xl:mt-6 md:mt-28 md:flex hidden" />
+        <img
+          src={doc1}
+          alt="design1"
+          className="p-0 xl:mt-6 md:mt-28 md:flex hidden"
+        />
       </div>
     </section>
   );

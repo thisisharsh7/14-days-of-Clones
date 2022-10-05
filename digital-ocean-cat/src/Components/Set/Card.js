@@ -86,21 +86,33 @@ export default function Card() {
         </div>
         <div className="flex gap-8 sm:justify-evenly justify-start flex-wrap ">
           <button
-            className={ (state === 0)  ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md` : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`}
+            className={
+              state === 0
+                ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md`
+                : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`
+            }
             id={0}
             onClick={setEvent}
           >
             1 CPU
           </button>
           <button
-            className={ (state === 1)  ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md` : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`}
+            className={
+              state === 1
+                ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md`
+                : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`
+            }
             id={1}
             onClick={setEvent}
           >
             2 CPUs
           </button>
           <button
-            className={ (state === 2)  ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md` : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`}
+            className={
+              state === 2
+                ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md`
+                : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`
+            }
             id={2}
             onClick={setEvent}
           >
@@ -108,7 +120,11 @@ export default function Card() {
             4 CPUs
           </button>
           <button
-            className={ (state === 3) ? `transition-all duration-700  bg-blue-500  px-4 py-2 rounded-md` : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`}
+            className={
+              state === 3
+                ? `transition-all duration-700  bg-blue-500  px-4 py-2 rounded-md`
+                : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`
+            }
             id={3}
             onClick={setEvent}
           >

@@ -4,7 +4,9 @@ export default function Thirdset() {
   return (
     <section className="bg-sky-100 z-10 max-w-full overflow-hidden">
       <div className="py-10 flex flex-col items-center gap-12">
-        <h1 className="text-blue-900 sm:text-5xl text-4xl text-center">Our Customers</h1>
+        <h1 className="text-blue-900 sm:text-5xl text-4xl text-center">
+          Our Customers
+        </h1>
         <div className="flex flex-col gap-10 customers">
           <ul className="list-none flex gap-10 ">
             <li>
@@ -104,93 +106,93 @@ export default function Thirdset() {
               />
             </li>
           </ul>
-        <div className="flex gap-5 second-list  w-full">
-          <ul className="list-none flex gap-5">
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/vidgyor-logo.249fd018.svg"
-                alt="vidgyor"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/centra-logo.b0378b4c.svg"
-                alt="centra"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/hack-the-box-logo.92f0f052.svg"
-                alt="hackthebox"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/wpmudev-logo.937916e3.svg"
-                alt="wpmudev"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/ghost-logo.f01e7d3c.png"
-                alt="ghost"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/whatfix-logo.0d67af6a.svg"
-                alt="whatfix"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/gitlab-logo.087cac3d.svg"
-                alt="gitlab"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/vidgyor-logo.249fd018.svg"
-                alt="vidgyor"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/centra-logo.b0378b4c.svg"
-                alt="centra"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/hack-the-box-logo.92f0f052.svg"
-                alt="hackthebox"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/wpmudev-logo.937916e3.svg"
-                alt="wpmudev"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/ghost-logo.f01e7d3c.png"
-                alt="ghost"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/whatfix-logo.0d67af6a.svg"
-                alt="whatfix"
-              />
-            </li>
-            <li>
-              <img
-                src="https://www.digitalocean.com/_next/static/media/gitlab-logo.087cac3d.svg"
-                alt="gitlab"
-              />
-            </li>
-          </ul>
+          <div className="flex gap-5 second-list  w-full">
+            <ul className="list-none flex gap-5">
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/vidgyor-logo.249fd018.svg"
+                  alt="vidgyor"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/centra-logo.b0378b4c.svg"
+                  alt="centra"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/hack-the-box-logo.92f0f052.svg"
+                  alt="hackthebox"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/wpmudev-logo.937916e3.svg"
+                  alt="wpmudev"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/ghost-logo.f01e7d3c.png"
+                  alt="ghost"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/whatfix-logo.0d67af6a.svg"
+                  alt="whatfix"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/gitlab-logo.087cac3d.svg"
+                  alt="gitlab"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/vidgyor-logo.249fd018.svg"
+                  alt="vidgyor"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/centra-logo.b0378b4c.svg"
+                  alt="centra"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/hack-the-box-logo.92f0f052.svg"
+                  alt="hackthebox"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/wpmudev-logo.937916e3.svg"
+                  alt="wpmudev"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/ghost-logo.f01e7d3c.png"
+                  alt="ghost"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/whatfix-logo.0d67af6a.svg"
+                  alt="whatfix"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.digitalocean.com/_next/static/media/gitlab-logo.087cac3d.svg"
+                  alt="gitlab"
+                />
+              </li>
+            </ul>
           </div>
         </div>
       </div>

@@ -33,7 +33,6 @@ export default function Fourthset() {
         </div>
         <Card />
       </div>
-      
     </section>
   );
 }

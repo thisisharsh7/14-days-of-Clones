@@ -53,7 +53,13 @@ export default function Header() {
               }}
             ></div>
           </div>
-          <div className= {(cross) ? "new-list p-4 list-none flex-col gap-5 absolute top-full bg-white right-0 left-0 " : "hidden"}>
+          <div
+            className={
+              cross
+                ? "new-list p-4 list-none flex-col gap-5 absolute top-full bg-white right-0 left-0 "
+                : "hidden"
+            }
+          >
             <ul className="flex-col gap-2 new-list-first ">
               <li>Products</li>
               <li>Solutions</li>
@@ -62,10 +68,10 @@ export default function Header() {
               <li>Pricing</li>
             </ul>
             <ul className="list-none sm:hidden flex gap-2 w-full">
-            <li className=" w-1/2 border-2 text-center">Log in</li>
-            <li className="bg-blue-600 hover:bg-blue-800 text-white font-semibold w-1/2 text-center">
-              Sign up
-            </li>
+              <li className=" w-1/2 border-2 text-center">Log in</li>
+              <li className="bg-blue-600 hover:bg-blue-800 text-white font-semibold w-1/2 text-center">
+                Sign up
+              </li>
             </ul>
             <ul className="flex flex-col gap-2 new-list-second ">
               <li>We're Hiring</li>
@@ -74,7 +80,7 @@ export default function Header() {
               <li>Get Support</li>
               <li>Sales</li>
             </ul>
-            </div>
+          </div>
         </nav>
       </div>
       <div className="absolute w-full shadow-box">
