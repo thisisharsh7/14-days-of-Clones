@@ -18,6 +18,90 @@ body {
   background-color: rgb(8, 27, 75);
   color: rgb(214, 220, 234);
 }
+@media only screen and (max-width:1200px){
+  .top ul li ~ li{
+    display: none;
+  }
+  .top ul li{
+    margin: 0;
+    align-self: center;
+  }
+}
+.new-nav{
+  display: none;
+}
+.new-list{
+  display: none;
+}
+@media only screen and (max-width:1000px){
+  .top ~ div nav ul:first-of-type{
+    display: none;
+  }
+  .new-list{
+    display: flex;
+    z-index: 10;
+  }
+  .top ~ div nav .new-list ul:first-of-type{
+    display: flex;
+  }
+  .new-list-first li{
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+  }
+  .new-list-first li:hover , .new-list-second li:hover{
+    background-color: transparent;
+  }
+  .new-list-second li{
+    border:2px solid gray;
+    text-align: center;
+  }
+  .new-list-second li:hover{
+    border-color: rgb(99, 148, 255);
+    color:rgb(86, 103, 255);
+  }
+  
+  .new-nav{
+    display: flex;
+  }
+  .new-nav div:first-of-type:after{
+    content:"|";
+    font-weight: lighter;
+    padding-left: 1rem;
+    padding-right: 0.2rem;
+    font-size: 1.2rem;
+    color:rgba(67, 82, 255, 0.436);
+  }
+  .new-nav div:nth-of-type(2):after{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 2.5px;
+    top:4px;
+    background-color:black;
+    
+  }
+  .new-nav div:nth-of-type(2):before{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 2.5px;
+    bottom: 3px;
+    background-color:black;
+  
+  }
+  .hamburger{
+    height:10px;
+  }
+  .hamburger:after{
+
+    rotate: 45deg;
+  }
+  .hamburger:before{
+
+    rotate: -45deg;
+  }
+}
+
 .mid {
   background-color: rgb(255, 255, 255);
   color: rgb(22, 41, 90);
@@ -39,20 +123,6 @@ h1 {
 }
 .first {
   background-color: rgb(0, 105, 255);
-}
-footer ul li ul li {
-  padding: 0;
-  cursor: pointer;
-}
-.footer-icon li{
-  padding: 0;
-}
-.footer-icon li img{
-  padding: 0;
-  min-width: max-content;
-}
-.footer-icon li img:hover{
-  background-color: rgb(146, 222, 241);
 }
 .shadow-box{
   box-shadow: -3px 12px 19px -6px rgba(49, 49, 49, 0.57);
@@ -117,4 +187,18 @@ footer ul li ul li {
     font-size: 2.4rem;
     word-break: break-all;
   }
+}
+footer ul li ul li {
+  padding: 0;
+  cursor: pointer;
+}
+.footer-icon li{
+  padding: 0;
+}
+.footer-icon li img{
+  padding: 0;
+  min-width: max-content;
+}
+.footer-icon li img:hover{
+  background-color: rgb(146, 222, 241);
 }
