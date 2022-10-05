@@ -84,7 +84,7 @@ export default function Card() {
             Easy, fast, and flexible compute built for a range of needs.
           </p>
         </div>
-        <div className="flex gap-2 justify-evenly">
+        <div className="flex gap-2 sm:justify-evenly justify-start flex-wrap ">
           <button
             className={ (state === 0)  ? `transition-all duration-700 bg-blue-500 px-4 py-2 rounded-md` : `px-4 py-2 rounded-md hover:bg-blue-600 transition-all duration-700`}
             id={0}
@@ -123,13 +123,13 @@ export default function Card() {
           <span> / {oCpu[state][2]} GiB Bandwidth</span>
         </p>
       </div>
-      <ul className="pt-2 px-5 pb-5 flex flex-col gap-3 charges">
-        <li className="flex relative justify-between gap-5 border-b-2 rounded-none border-dashed p-0 pb-3">
+      <ul className="pt-2 px-5 pb-5 flex flex-col gap-5 charges">
+        <li className="flex relative justify-between gap-10 border-b-2 rounded-none border-dashed p-0 pb-3">
           <div className="flex text-base gap-2">
             <img src={fbutton} alt="DigitalOcean" className="p-0" />
             <p className="self-center">DigitalOcean</p>
           </div>
-          <div className="flex flex-col items-end gap-1 ">
+          <div className="flex flex-col items-end min-w-max gap-1 ">
             <p>${oCpu[state][3]}</p>
             <p>Includes bandwidth</p>
           </div>
@@ -139,7 +139,7 @@ export default function Card() {
             <img src={sbutton} alt="GCP" className="p-0" />
             <p className="self-center">GCP</p>
           </div>
-          <div className="flex flex-col items-end gap-1 ">
+          <div className="flex flex-col items-end min-w-max gap-1 ">
             <p>${oCpu[state][4]}</p>
             <p>With bandwidth: ${oCpu[state][5]}</p>
           </div>
@@ -149,7 +149,7 @@ export default function Card() {
             <img src={tbutton} alt="AWS" className="p-0" />
             <p className="self-center">AWS</p>
           </div>
-          <div className="flex flex-col items-end gap-1 ">
+          <div className="flex flex-col items-end min-w-max gap-1 ">
             <p>${oCpu[state][6]}</p>
             <p>With bandwidth: ${oCpu[state][7]}</p>
           </div>
@@ -159,7 +159,7 @@ export default function Card() {
             <img src={fobutton} alt="Azure " className="p-0" />
             <p className="self-center">Azure</p>
           </div>
-          <div className="flex flex-col items-end gap-1 ">
+          <div className="flex flex-col items-end min-w-max gap-1 ">
             <p>${oCpu[state][8]}</p>
             <p>With bandwidth: ${oCpu[state][9]}</p>
           </div>
