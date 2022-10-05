@@ -35,19 +35,19 @@ export default function Firstset() {
       <div className="flex gap-6 font-semibold p-10 px-4  sm:px-10 z-10 flex-wrap ">
         <a
           href="/" 
-          className=" bg-white py-2 pl-2 pr-6 rounded-lg text-black flex gap-2 justify-center items-center w-full "
+          className=" bg-white py-2 pl-2 pr-6 rounded-lg text-black flex gap-2 justify-center items-center xl:w-max w-full "
         >
           <img src={googleI} alt="Google" />
           Sign up with Google
         </a>
         <a
           href="/"
-          className=" bg-white py-2 pl-2 pr-6 rounded-lg text-black flex gap-2 items-center  justify-center w-full text-center"
+          className=" bg-white py-2 pl-2 pr-6 rounded-lg text-black flex gap-2 items-center  justify-center xl:w-max text-center w-full"
         >
           <img src={githubI} alt="GitHub" />
           Sign up with GitHub
         </a>
-        <a href="" className=" bg-blue-900 py-3 px-12 rounded-lg text-white w-full text-center">
+        <a href="" className=" bg-blue-900 py-3 px-12 rounded-lg text-white xl:w-max w-full text-center">
           Sign up with email
         </a>
       </div>

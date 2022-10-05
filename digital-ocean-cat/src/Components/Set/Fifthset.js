@@ -4,8 +4,8 @@ import doc1 from "../images/doc1.svg";
 export default function Fifthset() {
   const [over, getOver] = useState("");
   return (
-    <section className="pt-20">
-      <div className="flex bg-blue-900 text-white max-w-max mx-auto  rounded-3xl">
+    <section className="pt-20 flex justify-center">
+      <div className="flex bg-blue-900 text-white max-w-max mx-5   rounded-3xl">
         <div className="flex flex-col items-start gap-4 py-6 px-10">
           <div className="flex flex-col gap-8">
             <h1 className="text-3xl ">A cloud for your entire journey</h1>
@@ -32,7 +32,7 @@ export default function Fifthset() {
             <span className={over}>{"-->"}</span>
           </a>
         </div>
-        <img src={doc1} alt="design1" className="p-0 mt-6" />
+        <img src={doc1} alt="design1" className="p-0 xl:mt-6 md:mt-28 md:flex hidden" />
       </div>
     </section>
   );
