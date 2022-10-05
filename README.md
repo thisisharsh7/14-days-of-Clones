@@ -21,7 +21,7 @@ Repository for the website clones..
 * Local storage is used for saving the user data and re-render it on every page loading.
 
 # Digital Ocean Landing Page
-(Live)[https://digitalocean-cat.netlify.app/]
+(Live)[https://yes-digitalocean.netlify.app/]
 ![amazon](./web-screenshot/digitalocean.jpg)
 * Technology used: React Js, Tailwind CSS.
 * Tailwind CSS and CSS both is used for design here.
