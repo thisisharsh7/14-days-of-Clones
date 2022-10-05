@@ -1,10 +1,10 @@
 import React from "react";
-import googleI from "./images/google-logo.svg";
-import githubI from "./images/github-logo.svg";
-import blcloud from "./images/blcloud.svg";
-import brcloud from "./images/brcloud.svg";
-import lcloud from "./images/lcloud.svg";
-import rcloud from "./images/rcloud.svg";
+import googleI from "../images/google-logo.svg";
+import githubI from "../images/github-logo.svg";
+import blcloud from "../images/blcloud.svg";
+import brcloud from "../images/brcloud.svg";
+import lcloud from "../images/lcloud.svg";
+import rcloud from "../images/rcloud.svg";
 
 export default function Firstset() {
   return (

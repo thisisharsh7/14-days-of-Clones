@@ -1,12 +1,12 @@
 import React from "react";
-import Firstset from "./Firstset";
-import Secondset from "./Secondset";
-import Thirdset from "./Thirdset";
-import Fourthset from "./Fourthset";
-import Fifthset from "./Fifthset";
-import Sixthset from "./Sixthset";
-import Seventhset from "./Seventhset";
-import Eightset from "./Eightset";
+import Firstset from "./Set/Firstset";
+import Secondset from "./Set/Secondset";
+import Thirdset from "./Set/Thirdset";
+import Fourthset from "./Set/Fourthset";
+import Fifthset from "./Set/Fifthset";
+import Sixthset from "./Set/Sixthset";
+import Seventhset from "./Set/Seventhset";
+import Eightset from "./Set/Eightset";
 
 export default function Main() {
   return (

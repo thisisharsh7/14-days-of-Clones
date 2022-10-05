@@ -1,5 +1,5 @@
 import React from "react";
-import data from "./tutorial.json";
+import data from "../tutorial.json";
 
 export default function Seventhset() {
   return (
@@ -12,7 +12,7 @@ export default function Seventhset() {
               className="flex flex-col gap-10 max-w-xs bg-white rounded-2xl pb-5 cursor-pointer shadow-card transition-all duration-200 delay-75 hover:scale-95"
             >
               <img
-                src={require(`./images/${sdata.isrc}.jpg`)}
+                src={require(`../images/${sdata.isrc}.jpg`)}
                 alt={sdata.isrc}
                 className="p-0 rounded-none rounded-t-2xl"
               />

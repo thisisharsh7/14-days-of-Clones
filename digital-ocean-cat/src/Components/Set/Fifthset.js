@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import doc1 from "./images/doc1.svg";
+import doc1 from "../images/doc1.svg";
 
 export default function Fifthset() {
   const [over, getOver] = useState("");
