@@ -86,3 +86,35 @@ footer ul li ul li {
     transform: translateX(-50%);
   }
 }
+.charges li{
+  cursor: default;
+}
+.charges li div{
+  cursor: text;
+}
+.charges li div img{
+  cursor: default;
+}
+.charges li div p:nth-of-type(2){
+  color:gray;
+}
+.charges li div:nth-of-type(2) p:first-of-type{
+  font-size: 2rem;
+}
+.charges li div:nth-of-type(2){
+  gap:0;
+}
+.charges li div:nth-of-type(2) p:first-of-type{
+  color:rgb(249, 60, 60);
+  font-weight: 600;
+}
+.charges li:first-child div:nth-of-type(2)  p:first-of-type{
+  color:rgb(68, 68, 252);
+  font-weight: 600;
+}
+@media only screen and (max-width:350px) {
+  .headLong{
+    font-size: 2.4rem;
+    word-break: break-all;
+  }
+}

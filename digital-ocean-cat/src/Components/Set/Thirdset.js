@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Thirdset() {
   return (
-    <section className="bg-sky-100 z-10">
+    <section className="bg-sky-100 z-10 max-w-full overflow-hidden">
       <div className="py-10 flex flex-col items-center gap-12">
         <h1 className="text-blue-900 text-5xl">Our Customers</h1>
         <div className="flex flex-col gap-10 customers">
-          <ul className="list-none flex gap-10">
+          <ul className="list-none flex gap-10 ">
             <li>
               <img
                 src="https://www.digitalocean.com/_next/static/media/bunnyshell-logo.d9a44f28.svg"
@@ -104,7 +104,7 @@ export default function Thirdset() {
               />
             </li>
           </ul>
-        <div className="flex gap-5 second-list max-w-screen-2xl mx-auto">
+        <div className="flex gap-5 second-list  w-full">
           <ul className="list-none flex gap-5">
             <li>
               <img
