@@ -68,41 +68,21 @@ footer ul li ul li {
   padding: 2px 4px;
 
 }
-.first-list ul:first-of-type{
-  transform: translateX(-100%);
-  animation: run 15s 0s linear infinite ;
-}
-.first-list ul:nth-of-type(2){
-  transform: translateX(100%);
-animation: back 15s 0s linear infinite;
-
+.customers ul:first-of-type{
+  transform: translateX(-30%);
+  animation: run 45s 0s linear infinite ;
 }
 .second-list ul:first-of-type{
-  transform: translateX(100%);
+  transform: translateX(0%);
   animation: run-second 20s 0s linear infinite ;
-}
-.second-list ul:nth-of-type(2){
-  transform: translateX(-100%);
-animation: back-second 20s 0s linear infinite;
-animation-fill-mode: forwards;
 }
 @keyframes run {
   from{
-    transform: translateX(100%);
-  }
-}
-@keyframes back{
-  to{
-    transform: translateX(-100%);
+    transform: translateX(20%);
   }
 }
 @keyframes run-second {
   from{
-    transform: translateX(-100%);
-  }
-}
-@keyframes back-second{
-  to{
-    transform: translateX(100%);
+    transform: translateX(-50%);
   }
 }

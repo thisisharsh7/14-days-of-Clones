@@ -5,8 +5,7 @@ export default function Thirdset() {
     <section className="bg-sky-100 z-10">
       <div className="py-10 flex flex-col items-center gap-12">
         <h1 className="text-blue-900 text-5xl">Our Customers</h1>
-        <div className="flex flex-col gap-16 customers">
-        <div className="flex gap-10 first-list">
+        <div className="flex flex-col gap-10 customers">
           <ul className="list-none flex gap-10">
             <li>
               <img
@@ -56,8 +55,6 @@ export default function Thirdset() {
                 alt="3cx"
               />
             </li>
-          </ul>
-          <ul className="list-none flex gap-10">
             <li>
               <img
                 src="https://www.digitalocean.com/_next/static/media/bunnyshell-logo.d9a44f28.svg"
@@ -107,8 +104,7 @@ export default function Thirdset() {
               />
             </li>
           </ul>
-        </div>
-        <div className="flex gap-5 second-list">
+        <div className="flex gap-5 second-list max-w-screen-2xl mx-auto">
           <ul className="list-none flex gap-5">
             <li>
               <img
@@ -152,8 +148,6 @@ export default function Thirdset() {
                 alt="gitlab"
               />
             </li>
-          </ul>
-          <ul className="list-none flex gap-5">
             <li>
               <img
                 src="https://www.digitalocean.com/_next/static/media/vidgyor-logo.249fd018.svg"
