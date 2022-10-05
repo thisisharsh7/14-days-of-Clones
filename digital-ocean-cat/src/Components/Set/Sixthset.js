@@ -5,9 +5,9 @@ export default function Sixthset() {
   return (
     <section className="pt-24">
       <div className="flex flex-col items-center gap-6 py-6 px-1 text-blue-900 max-w-max mx-auto  rounded-3xl">
-        <div className="flex flex-col gap-8 text-center">
+        <div className="flex flex-col gap-8 text-center p-3">
           <h1 className="text-4xl ">Grow with a global community</h1>
-          <p className="max-w-xl text-gray-600">
+          <p className="sm:max-w-xl text-gray-600 w-full">
             Our community is made up of people all over the world, who are
             driven to develop software and grow businesses in the cloud. Learn
             from other cloud users through open tutorials, resources, and

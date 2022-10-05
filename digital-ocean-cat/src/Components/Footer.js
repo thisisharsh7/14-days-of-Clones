@@ -4,7 +4,7 @@ import footerLogo from "./images/footerlogo.svg";
 export default function Footer() {
   return (
     <footer className="bg-blue-600 text-white pt-8 pb-8">
-      <ul className="flex mx-auto max-w-screen-xl px-3 pb-8 md:gap-5 gap-20 md:flex-nowrap flex-wrap ">
+      <ul className="flex mx-auto max-w-screen-xl md:justify-evenly px-3 pb-8 md:gap-5 gap-20 md:flex-nowrap flex-wrap ">
         <li className="flex flex-col  font-bold cursor-auto gap-5 text-2xl ">
           Company
           <ul className="flex flex-col font-normal gap-3 items-start text-base">
@@ -85,7 +85,7 @@ export default function Footer() {
           </ul>
         </li>
       </ul>
-      <div className="flex mx-auto max-w-screen-xl justify-between px-3 items-center pt-8 border-t-2 border-dotted flex-wrap gap-10">
+      <div className="flex mx-auto max-w-screen-xl xl:justify-between justify-center px-3 items-center pt-8 border-t-2 border-dotted flex-wrap gap-10">
         <div className="flex gap-2 items-center ">
           <img src={footerLogo} alt="footerLogo " />
           <p>© 2022 DigitalOcean, LLC. All rights reserved.</p>
