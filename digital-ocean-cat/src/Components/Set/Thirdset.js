@@ -4,7 +4,7 @@ export default function Thirdset() {
   return (
     <section className="bg-sky-100 z-10 max-w-full overflow-hidden">
       <div className="py-10 flex flex-col items-center gap-12">
-        <h1 className="text-blue-900 text-5xl">Our Customers</h1>
+        <h1 className="text-blue-900 sm:text-5xl text-4xl text-center">Our Customers</h1>
         <div className="flex flex-col gap-10 customers">
           <ul className="list-none flex gap-10 ">
             <li>

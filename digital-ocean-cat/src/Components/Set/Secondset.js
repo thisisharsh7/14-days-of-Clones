@@ -4,7 +4,7 @@ export default function Secondset() {
   const [anim, setAnim] = useState("");
   return (
     <section className="bg-white z-10 relative rounded-t-3xl pt-28 pb-40 flex flex-col items-center w-full gap-24 bg-[url('https://www.digitalocean.com/_next/static/media/topWaveSliceBlue5.57825f7b.svg')] bg-repeat-x bg-bottom">
-      <div className="flex justify-evenly w-full max-w-screen-xl px-2">
+      <div className="flex w-full max-w-screen-xl px-2 sm:justify-center flex-wrap gap-10 items-start pl-8">
         <p className="flex flex-col">
           <span className="text-4xl font-bold text-blue-600">14</span>
           <span className="text-xl text-gray-600 font-medium w-52">
@@ -31,8 +31,8 @@ export default function Secondset() {
         </p>
       </div>
       <div className="flex flex-col items-center gap-12">
-        <div className="flex flex-col items-center gap-3">
-          <h1 className="text-4xl text-blue-900">
+        <div className="flex flex-col items-center gap-3 p-4">
+          <h1 className="text-4xl text-blue-900 text-center">
             Do more with less complexity
           </h1>
           <p className="text-center max-w-2xl text-gray-500">
