@@ -94,7 +94,7 @@ export default function Header() {
               hide("hidden");
             }}
           >
-            X
+            <div class="cross-stick"></div>
           </p>
         </div>
       </div>

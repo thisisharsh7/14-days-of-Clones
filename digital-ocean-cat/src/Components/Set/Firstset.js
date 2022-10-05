@@ -8,7 +8,7 @@ import rcloud from "../images/rcloud.svg";
 
 export default function Firstset() {
   return (
-    <section className=" first md:pt-12 sm:pt-16 pt-20  pb-24 flex flex-col items-center gap-8 relative">
+    <section className=" first md:pt-12 sm:pt-16 pt-20  md:pb-36 pb-20 flex flex-col items-center gap-8 relative">
       <div className="absolute -left-3 top-20 xl:flex hidden">
         <img src={lcloud} alt="cloud" />
       </div>
@@ -34,7 +34,7 @@ export default function Firstset() {
       </div>
       <div className="flex gap-6 font-semibold p-10 px-4  sm:px-10 z-10 flex-wrap ">
         <a
-          href="/" 
+          href="/"
           className=" bg-white py-2 pl-2 pr-6 rounded-lg text-black flex gap-2 justify-center items-center xl:w-max w-full "
         >
           <img src={googleI} alt="Google" />
@@ -47,10 +47,14 @@ export default function Firstset() {
           <img src={githubI} alt="GitHub" />
           Sign up with GitHub
         </a>
-        <a href="" className=" bg-blue-900 py-3 px-12 rounded-lg text-white xl:w-max w-full text-center">
+        <a
+          href="/"
+          className=" bg-blue-900 py-3 px-12 rounded-lg text-white xl:w-max w-full text-center"
+        >
           Sign up with email
         </a>
       </div>
+      <div className="w-full bg-white h-10 rounded-t-full absolute bottom-0"></div>
     </section>
   );
 }

@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
+:root{
+  --bg-crossStick: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -94,14 +98,36 @@ body {
   }
   .hamburger:after{
 
-    rotate: 45deg;
+    transform: rotate(45deg);
   }
   .hamburger:before{
 
-    rotate: -45deg;
+    transform: rotate(-45deg);
   }
+  
 }
-
+.cross-stick{
+  width: 20px;
+  height: 10px;
+}
+.cross-stick:after , .cross-stick:before{
+  content:"";
+  position: absolute;
+  width: 20px;
+  height: 2.5px;
+  background-color:var(--bg-crossStick);
+}
+.cross-stick:hover{
+  --bg-crossStick : blue;
+}
+.cross-stick:after{
+  top:4px;
+  transform: rotate(45deg);
+}
+.cross-stick:before{
+  bottom: 3px;
+  transform: rotate(-45deg);
+}
 .mid {
   background-color: rgb(255, 255, 255);
   color: rgb(22, 41, 90);

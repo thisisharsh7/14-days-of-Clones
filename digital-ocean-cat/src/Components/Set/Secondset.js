@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function Secondset() {
   const [anim, setAnim] = useState("");
   return (
-    <section className="bg-white z-10 relative rounded-t-3xl pt-28 pb-40 flex flex-col items-center w-full gap-24 bg-[url('https://www.digitalocean.com/_next/static/media/topWaveSliceBlue5.57825f7b.svg')] bg-repeat-x bg-bottom">
+    <section className="bg-white z-10 relative pt-28 pb-40 flex flex-col items-center w-full gap-24 bg-[url('https://www.digitalocean.com/_next/static/media/topWaveSliceBlue5.57825f7b.svg')] bg-repeat-x bg-bottom">  
       <div className="flex w-full max-w-screen-xl px-2 sm:justify-center flex-wrap gap-10 items-start pl-8">
         <p className="flex flex-col">
           <span className="text-4xl font-bold text-blue-600">14</span>
