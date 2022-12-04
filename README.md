@@ -24,9 +24,9 @@ Repository for the website clones..
 (Live)[https://yes-digitalocean.netlify.app/]
 ![amazon](./web-screenshot/digitalocean.jpg)
 * Technology used: React Js, Tailwind CSS.
-* Tailwind CSS and CSS both is used for design here.
+* Tailwind CSS and CSS are used for design here.
 * UseReducer hook is used to change toggle the array of data.
-* Some Animation are also added for beter user experience.
+* Some Animations are also added for beter user experience.
 * Responsive at different screen width.
 
 
