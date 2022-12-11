@@ -1,7 +1,7 @@
 Repository for the website clones..
 
 # Netflix Clone
-(Live)[https://yes-netflix.netlify.app/]
+Live->[https://yes-netflix.netlify.app/]
 ![netflix](./web-screenshot/netflix.jpg)
 * Technology used: React Js, Some external npm Pakages, API.
 * CSS is used for design here.
@@ -13,7 +13,7 @@ Repository for the website clones..
 * react-router-dom: For switching between Sign In, Sign out and Home page without loading the page again and again.
 
 # Amazon Clone
-(Live)[https://yes-amazon.netlify.app/]
+Live->[https://yes-amazon.netlify.app/]
 ![amazon](./web-screenshot/amazon.jpg)
 * Technology used: React Js, Tailwind CSS.
 * Tailwind is used for design here.
@@ -21,7 +21,7 @@ Repository for the website clones..
 * Local storage is used for saving the user data and re-render it on every page loading.
 
 # Digital Ocean Landing Page
-(Live)[https://yes-digitalocean.netlify.app/]
+Live->[https://yes-digitalocean.netlify.app/]
 ![amazon](./web-screenshot/digitalocean.jpg)
 * Technology used: React Js, Tailwind CSS.
 * Tailwind CSS and CSS are used for design here.
