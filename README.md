@@ -1,6 +1,6 @@
 Repository for the website clones..
 
-# Netflix Clone
+# Movie Trailer
 Live->[https://yes-netflix.netlify.app/]
 ![netflix](./web-screenshot/netflix.jpg)
 * Technology used: React Js, Some external npm Pakages, API.
@@ -20,7 +20,7 @@ Live->[https://yes-amazon.netlify.app/]
 * React router Dom is used for switching between the cart, Sign in and home Pages.
 * Local storage is used for saving the user data and re-render it on every page loading.
 
-# Digital Ocean Landing Page
+# Digital Ocean
 Live->[https://yes-digitalocean.netlify.app/]
 ![amazon](./web-screenshot/digitalocean.jpg)
 * Technology used: React Js, Tailwind CSS.
